@@ -1,0 +1,6 @@
+data2 = pd.read_csv('../input/malware-avsigversion-threats/AvSigversion_Threats.csv')
+cv = pd.DataFrame(data2.groupby('AvSigVersion')['index'].count()).rename({'index':'ThreatCount'},axis=1)
+df_train = pd.merge(df_train,cv,on='AvSigVersion',how='left')
+df_train['ThreatCount'].fillna(0,inplace=True)
+print('THREAT DATA')
+data2.sample(10)

@@ -1,0 +1,7 @@
+bins = np.linspace(0, 120, 61)
+pyplot.figure(figsize=(15,5))
+pyplot.title('Distribution of Winning and Losing Scores All Years')
+pyplot.hist(regseasoncompactresults['WScore'], bins, alpha=0.5, label='Winning Score')
+pyplot.hist(regseasoncompactresults['LScore'], bins, alpha=0.5, label='Losing Score')
+pyplot.legend(loc='upper right')
+pyplot.show()

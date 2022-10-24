@@ -1,0 +1,2 @@
+tt.loc[tt['Place'].isin(constant_fatal_places), 'ConfirmedCases_Pred1'] = tt.loc[tt['Place'].isin(constant_fatal_places)]['Place'].map(tt.loc[tt['Place'].isin(constant_fatal_places)].groupby('Place')['ConfirmedCases'].max())
+tt.loc[tt['Place'].isin(constant_fatal_places), 'Fatalities_Pred1'] = tt.loc[tt['Place'].isin(constant_fatal_places)]['Place'].map(tt.loc[tt['Place'].isin(constant_fatal_places)].groupby('Place')['Fatalities'].max())

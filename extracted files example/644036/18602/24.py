@@ -1,0 +1,11 @@
+fig, ax = plt.subplots(figsize=(15, 8))
+for i, d in MEvents.loc[~MEvents['Area_Name'].isna()].groupby('Area_Name'):
+    d.plot(x='X', y='Y', style='.', label=i, ax=ax, title='Visualizing Event Areas')
+    ax.legend()
+plt.legend(bbox_to_anchor=(1.04,1), loc="upper left")
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_xlabel('')
+ax.set_xlim(0, 100)
+ax.set_ylim(0, 100)
+plt.show()

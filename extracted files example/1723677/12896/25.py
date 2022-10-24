@@ -1,0 +1,7 @@
+plt.figure(figsize=(5,5))
+plt.scatter(train[133],train[162],c=train['target'])
+plt.plot([-2,2],[-2,2],':k')
+plt.title('Among 300 simulated useless variables, we find these two!')
+plt.xlabel('synthetic variable 133')
+plt.ylabel('synthetic variable 162')
+plt.show()

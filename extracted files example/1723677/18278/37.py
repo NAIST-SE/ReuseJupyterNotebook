@@ -1,0 +1,6 @@
+cmat = confusion_matrix(cm_correct_labels, cm_predictions, labels=range(len(CLASSES)))
+score = f1_score(cm_correct_labels, cm_predictions, labels=range(len(CLASSES)), average='macro')
+precision = precision_score(cm_correct_labels, cm_predictions, labels=range(len(CLASSES)), average='macro')
+recall = recall_score(cm_correct_labels, cm_predictions, labels=range(len(CLASSES)), average='macro')
+display_confusion_matrix(cmat, score, precision, recall)
+print('f1 score: {:.3f}, precision: {:.3f}, recall: {:.3f}'.format(score, precision, recall)); print()

@@ -1,0 +1,5 @@
+plt.style.use('ggplot')
+fig, ax = plt.subplots(figsize=(10, 3))
+ax = sns.distplot(train['signal_to_noise'])
+ax.set_title('Signal to Noise feature (train)')
+plt.show()

@@ -1,0 +1,5 @@
+ss = pd.read_csv('../input/LANL-Earthquake-Prediction/sample_submission.csv')
+test = ImageList.from_df(ss, '../input/lanl-earthquake-spectrogram-images/test_images/test_images_v3/', cols='seg_id', suffix='.png')
+learn = load_learner('./', test=test)
+learn.load('cnn-step1')
+preds = learn.get_preds(ds_type=DatasetType.Test)

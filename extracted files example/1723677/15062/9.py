@@ -1,0 +1,10 @@
+seed = generate_latent_points(noise_dim, 100)
+labs = tf.cast(120*tf.random.uniform((100,1)),tf.int8)
+predictions = generator([seed,labs], training=False)
+plt.figure(figsize=(20,20))
+plt.subplots_adjust(wspace=0,hspace=0)
+for k in range(100):
+    plt.subplot(10,10,k+1)
+    plt.imshow( (predictions[k,:,:,:]+1.)/2. )
+    plt.axis('off')
+plt.show()

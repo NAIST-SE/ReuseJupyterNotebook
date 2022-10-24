@@ -1,0 +1,1 @@
+ss.agg(['mean','median'])

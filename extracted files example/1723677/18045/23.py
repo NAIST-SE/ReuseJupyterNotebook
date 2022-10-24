@@ -1,0 +1,7 @@
+plt.figure(figsize=(20,5))
+plt.plot(train.time[::1000],train.signal[::1000])
+plt.title('Training Batches 7-10 with Parabolic Drift',size=16)
+plt.figure(figsize=(20,5))
+plt.plot(train2.time[::1000],train2.signal[::1000])
+plt.title('Training Batches 7-10 without Parabolic Drift',size=16)
+plt.show()

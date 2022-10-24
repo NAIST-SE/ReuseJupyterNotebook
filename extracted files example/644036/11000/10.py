@@ -1,0 +1,6 @@
+ss_simulated.plot(kind='hist', bins= 100, figsize=(15, 5), alpha=0.5)
+sub1352['time_to_failure'].plot(kind='hist', bins= 100, figsize=(15, 5), label='1.352 SUB', alpha=0.5)
+sub1389['time_to_failure'].plot(kind='hist', bins= 100, figsize=(15, 5), label='1.389 SUB', alpha=0.5)
+sub1362['time_to_failure'].plot(kind='hist', bins= 100, figsize=(15, 5), label='1.362 SUB', alpha=0.5)
+plt.legend()
+plt.show()

@@ -1,0 +1,12 @@
+ss.sort_values('sub1.352').reset_index()['sub1.352'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+ss.sort_values('sub1.389').reset_index()['sub1.389'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+ss.sort_values('sub1.362').reset_index()['sub1.362'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+ss.sort_values('sub1.371').reset_index()['sub1.371'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+ss.sort_values('sub1.380').reset_index()['sub1.380'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+ss.sort_values('sub1.381').reset_index()['sub1.381'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+ss.sort_values('simulated').reset_index()['simulated'].plot(figsize=(15, 10), title='Compare TTF of simulated vs. Submissions')
+
+plt.xlabel('Sample Sorted')
+plt.ylabel('Time to Fault')
+plt.legend()
+plt.show()

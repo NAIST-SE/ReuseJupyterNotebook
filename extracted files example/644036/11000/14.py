@@ -1,0 +1,21 @@
+sub1350_2037CV = pd.read_csv('../input/last-10-subs-data/1350_submission_lgb_FINALSHUFFLED_2.037CV_123Feats_24000Rows.csv')
+sub1355_2038CV = pd.read_csv('../input/last-10-subs-data/1355_submission_lgb_FINALSHUFFLED_2.038CV_119Feats_24000Rows.csv')
+sub1383_1991CV = pd.read_csv('../input/last-10-subs-data/1383_submission_lgb_FINALSHUFFLED_1.991CV_120Feats_24000Rows.csv')
+sub1388_2086CV = pd.read_csv('../input/last-10-subs-data/1398_submission_lgb_FINALSHUFFLED_2.086CV_138Feats_24000Rows.csv')
+sub1404_2009CV = pd.read_csv('../input/last-10-subs-data/1404_submission_lgb_FINALSHUFFLED_2.009CV_116Feats_24000Rows.csv')
+sub1432_xgb = pd.read_csv('../input/last-10-subs-data/1432_submission_xgb_FINALSHUFFLED.csv')
+sub1529_xgb = pd.read_csv('../input/last-10-subs-data/1529_submission_xgb_FINALSHUFFLED.csv')
+sub1532_1948CV = pd.read_csv('../input/last-10-subs-data/1532_submission_lgb_1.948CV_110Feats_24000Rows_15Fold.csv')
+sub1534_2092CV = pd.read_csv('../input/last-10-subs-data/1534_submission_lgb_FINALSHUFFLED_2.092CV_24Feats_24000Rows.csv')
+sub1863_2283CV = pd.read_csv('../input/last-10-subs-data/1863_submission_lgb_FINALSHUFFLED_2.283CV_17Feats_24000Rows.csv')
+
+ss['sub1350_2037CV'] = sub1350_2037CV['time_to_failure']
+ss['sub1355_2038CV'] = sub1355_2038CV['time_to_failure']
+ss['sub1383_1991CV'] = sub1383_1991CV['time_to_failure']
+ss['sub1388_2086CV'] = sub1388_2086CV['time_to_failure']
+ss['sub1404_2009CV'] = sub1404_2009CV['time_to_failure']
+ss['sub1432_xgb'] = sub1432_xgb['time_to_failure']
+ss['sub1529_xgb'] = sub1529_xgb['time_to_failure']
+ss['sub1532_1948CV'] = sub1532_1948CV['time_to_failure']
+ss['sub1534_2092CV'] = sub1534_2092CV['time_to_failure']
+ss['sub1863_2283CV'] = sub1863_2283CV['time_to_failure']

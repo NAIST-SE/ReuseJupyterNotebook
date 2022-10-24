@@ -1,0 +1,10 @@
+fig=plt.figure(figsize=(20, 10))
+columns = 3; rows = 1
+fig.add_subplot(rows, columns, 1).set_title("Normal", fontsize=30)
+draw(parsed[normal['patientId'].unique()[2]])
+fig.add_subplot(rows, columns, 2).set_title("Not Normal", fontsize=30)
+# ax2.set_title("Not Normal", fontsize=30)
+draw(parsed[not_normal['patientId'].unique()[2]])
+fig.add_subplot(rows, columns, 3).set_title("Opacity", fontsize=30)
+# ax3.set_title("Opacity", fontsize=30)
+draw(parsed[opacity['patientId'].unique()[2]])
