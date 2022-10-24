@@ -11,6 +11,17 @@ The work opens up new research potential into recommending how developers can re
 - Dataset: [KGTorrent](https://zenodo.org/record/4468523)
 - Tool: [NCDSearch](https://github.com/takashi-ishio/NCDSearch)
 
-## Manual Tasks
+## Replication
+You can edit the directory and configurations that are already predefined as you desire to replicate this work. The primary automated script file is `automated_comparing_script.ipynb`.
+
+#### Manual Tasks
 We run the automated script to generate the result of code reusing. The result will be written as a CSV file named `output.csv`. (One file / One competitor)
 Then, we do a manual [code type classification](https://docs.google.com/spreadsheets/d/1V_JtBJURIcg-o8r25Go7eDnjsbA61gUP_0NEAsfdlpg/) and visualization (`playground.ipynb`).
+
+# Authors
+- Natanon Ritta
+- Tasha Settewong
+- [Raula Gaikovina Kula](https://raux.github.io/)
+- [Chaiyong Ragkhitwetsagul](https://cragkhit.github.io/)
+- [Thanwadee Sunetnanta](http://mucc.mahidol.ac.th/~ittth/)
+- [Kenichi Matsumoto](https://matsumotokenichi.github.io/)
