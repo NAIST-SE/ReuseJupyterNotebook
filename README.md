@@ -13,6 +13,10 @@ The work opens up new research potential into recommending how developers can re
 
 ## Replication
 You can edit the directory and configurations that are already predefined as you desire to replicate this work. The primary automated script file is `automated_comparing_script.ipynb`.
+##### Configuration to be changed: 
+- Base directory
+- Tool (`ncdsearch.jar`) directory
+- Directory to save the results.
 
 #### Manual Tasks
 We run the automated script to generate the result of code reusing. The result will be written as a CSV file named `output.csv`. (One file / One competitor)
